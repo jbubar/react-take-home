@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import { fetchAllCampaigns } from "./campaignsApiUtil";
+import { fetchAllCampaigns } from "./campaignApiUtil";
 
 export const CampaignContext = createContext();
 
