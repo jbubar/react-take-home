@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import { CampaignContext } from "./utils/campaignContext";
+import ThePlugPage from "./components/thePlugPage"
 
 
 function App() {
   const campaigns = useContext(CampaignContext)
+  if(!campaigns) return (<div>Loading...<br/><br/> If nothing happens for a while try refreshing</div>)
   return (
     <div className="App">
-      {console.log(campaigns)}
-      Hey!
+      <ThePlugPage campaigns={campaigns} />
     </div>
   );
 }

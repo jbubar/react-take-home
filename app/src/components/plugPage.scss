@@ -1,0 +1,40 @@
+.header{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+    }
+}
+.campaign{
+    .campaign-header{ 
+        padding: 18px;
+        display: flex;
+        img{
+            max-height: 65px;
+            max-width: 65px;
+            border-radius: 18px;
+        }
+        .campaign-header-text{
+            margin-left: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .campaign-name{
+                font-size: 19px;
+                line-height: 28px;
+                letter-spacing: -0.456px;
+            }
+            .campaign-per-install{
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: -0.32px;
+                color: #009330;
+                margin: 5px 0 8px; 
+            }
+        }
+    }
+}
