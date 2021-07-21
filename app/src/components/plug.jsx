@@ -1,4 +1,5 @@
 import React from 'react'
+import CampaignMedia from './campaignMedia'
 
 export default function Plug({ campaign }) {
     return (
@@ -14,7 +15,9 @@ export default function Plug({ campaign }) {
                     <div className="campaign-per-install">{`${campaign.pay_per_install} per install`}</div>
                 </div>
             </header>
-            
+            {campaign.medias.map(media => (
+                <CampaignMedia media={media} />
+            ))}
         </section>
     )
 }
